@@ -688,18 +688,4 @@ video {
   }
 }
 
-@media (min-width: 1536px) {
-  .\32xl\:ml-10 {
-    margin-left: 2.5rem;
-  }
-
-  .\32xl\:ml-80 {
-    margin-left: 20rem;
-  }
-
-  .\32xl\:ml-40 {
-    margin-left: 10rem;
-  }
-}
-
 
