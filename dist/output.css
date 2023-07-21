@@ -522,48 +522,140 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
-.inline {
-  display: inline;
+.flex {
+  display: flex;
 }
 
-.bg-slate-600 {
+.h-\[684px\] {
+  height: 684px;
+}
+
+.h-\[812px\] {
+  height: 812px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.bg-\[\#FD665E\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  background-color: rgb(253 102 94 / var(--tw-bg-opacity));
 }
 
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.py-\[60px\] {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.py-11 {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
+.pt-\[200px\] {
+  padding-top: 200px;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.pt-\[40px\] {
+  padding-top: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[64px\] {
+  font-size: 64px;
+}
+
+.text-\[40px\] {
+  font-size: 40px;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.textss{
-  color: blue;
+.leading-\[14px\] {
+  line-height: 14px;
 }
+
+.leading-\[px\] {
+  line-height: px;
+}
+
+.leading-\[64px\] {
+  line-height: 64px;
+}
+
+.text-\[\#FD665E\] {
+  --tw-text-opacity: 1;
+  color: rgb(253 102 94 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:gap-\[78px\] {
+    gap: 78px;
+  }
+
+  .md\:gap-\[88px\] {
+    gap: 88px;
+  }
+
+  .md\:py-\[20px\] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .md\:pt-\[200px\] {
+    padding-top: 200px;
+  }
+
+  .md\:pt-\[00px\] {
+    padding-top: 00px;
+  }
+
+  .md\:pt-\[100px\] {
+    padding-top: 100px;
+  }
+
+  .md\:pt-\[220px\] {
+    padding-top: 220px;
+  }
+
+  .md\:text-\[64px\] {
+    font-size: 64px;
+  }
+}
+
