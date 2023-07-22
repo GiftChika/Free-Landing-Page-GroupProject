@@ -605,6 +605,10 @@ video {
   margin-top: 80px;
 }
 
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .flex {
   display: flex;
 }
@@ -880,6 +884,11 @@ video {
   .xl\:mx-\[600px\] {
     margin-left: 600px;
     margin-right: 600px;
+  }
+
+  .xl\:mx-\[500px\] {
+    margin-left: 500px;
+    margin-right: 500px;
   }
 
   .xl\:w-\[369px\] {
