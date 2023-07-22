@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -522,48 +534,219 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
-.inline {
-  display: inline;
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
+.mt-8 {
+  margin-top: 2rem;
 }
 
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.flex {
+  display: flex;
 }
 
-.py-1 {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+.hidden {
+  display: none;
 }
 
-.py-11 {
-  padding-top: 2.75rem;
-  padding-bottom: 2.75rem;
+.h-\[55px\] {
+  height: 55px;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.w-\[200px\] {
+  width: 200px;
 }
 
-.font-bold {
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[300px\] {
+  width: 300px;
+}
+
+.gap-3 {
+  gap: 0.75rem;
+}
+
+.rounded-\[5px\] {
+  border-radius: 5px;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[34px\] {
+  font-size: 34px;
+}
+
+.font-\[300\] {
+  font-weight: 300;
+}
+
+.font-\[700\] {
   font-weight: 700;
 }
 
-.textss{
-  color: blue;
+.font-\[800\] {
+  font-weight: 800;
 }
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .lg\:mx-\[400px\] {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  .lg\:mt-1 {
+    margin-top: 0.25rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:mx-\[100px\] {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .xl\:mx-\[600px\] {
+    margin-left: 600px;
+    margin-right: 600px;
+  }
+
+  .xl\:w-\[369px\] {
+    width: 369px;
+  }
+
+  .xl\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .xl\:gap-24 {
+    gap: 6rem;
+  }
+
+  .xl\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .xl\:text-\[46px\] {
+    font-size: 46px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:mx-\[880px\] {
+    margin-left: 880px;
+    margin-right: 880px;
+  }
+
+  .\32xl\:my-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .\32xl\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .\32xl\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
+  .\32xl\:h-\[95px\] {
+    height: 95px;
+  }
+
+  .\32xl\:w-\[500px\] {
+    width: 500px;
+  }
+
+  .\32xl\:w-\[553px\] {
+    width: 553px;
+  }
+
+  .\32xl\:w-\[600px\] {
+    width: 600px;
+  }
+
+  .\32xl\:w-\[850px\] {
+    width: 850px;
+  }
+
+  .\32xl\:max-w-\[50\%\] {
+    max-width: 50%;
+  }
+
+  .\32xl\:gap-10 {
+    gap: 2.5rem;
+  }
+
+  .\32xl\:gap-40 {
+    gap: 10rem;
+  }
+
+  .\32xl\:px-\[90px\] {
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .\32xl\:py-\[30px\] {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .\32xl\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .\32xl\:text-\[65px\] {
+    font-size: 65px;
+  }
+}
+
+
