@@ -542,12 +542,12 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -630,12 +630,12 @@ video {
     margin-top: 0.25rem;
   }
 
-  .lg\:mt-20 {
-    margin-top: 5rem;
-  }
-
   .lg\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .lg\:mt-20 {
+    margin-top: 5rem;
   }
 
   .lg\:flex {
@@ -680,14 +680,14 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:mx-\[880px\] {
-    margin-left: 880px;
-    margin-right: 880px;
-  }
-
   .\32xl\:my-auto {
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  .\32xl\:mx-\[880px\] {
+    margin-left: 880px;
+    margin-right: 880px;
   }
 
   .\32xl\:mt-14 {
