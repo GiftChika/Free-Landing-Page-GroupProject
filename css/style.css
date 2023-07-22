@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.opening-box {
+  background: #ffffff;
+  padding: 10px 100px;
+}
+
+.sounds-too-good {
+  font-family: "Playfair Display", serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 60px;
+  display: flex;
+  margin-bottom: 40px;
+  color: #000000;
+  letter-spacing: -0.02em;
+  width: 35%;
+}
+
+.rest-details {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+}
+
+.rest2 {
+  display: flex;
+  width: 70%;
+  gap: 40px;
+}
+
+.appreciation-text {
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 58px;
+  color: #000000;
+  letter-spacing: 0.01em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.position-div {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.position-and-direction-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.direction-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .opening-box {
+    background: #ffffff;
+    padding: 10px 50px;
+  }
+
+  .appreciation-text {
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 58px;
+    color: #000000;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .opening-box {
+    background: #ffffff;
+    padding: 10px 20px;
+  }
+
+  .rest-details {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .rest2 {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .sounds-too-good {
+    width: 50%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .opening-box {
+    background: #ffffff;
+    padding: 10px 20px;
+  }
+
+  .rest-details {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .rest2 {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .sounds-too-good {
+    width: 50%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .opening-box {
+    background: #ffffff;
+    padding: 10px 20px;
+  }
+
+  .rest-details {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .rest2 {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .sounds-too-good {
+    width: 60%;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .opening-box {
+    background: #ffffff;
+    padding: 10px 20px;
+  }
+
+  .rest-details {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+  }
+
+  .rest2 {
+    display: flex;
+    width: 70%;
+    gap: 40px;
+  }
+
+  .sounds-too-good {
+    width: 60%;
+    font-size: 32px;
+  }
+
+  .appreciation-text {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 58px;
+    color: #000000;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+  }
+}
