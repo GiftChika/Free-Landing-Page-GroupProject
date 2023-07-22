@@ -781,6 +781,21 @@ video {
     margin-bottom: auto;
   }
 
+  .\32xl\:mx-\[780px\] {
+    margin-left: 780px;
+    margin-right: 780px;
+  }
+
+  .\32xl\:mx-\[800px\] {
+    margin-left: 800px;
+    margin-right: 800px;
+  }
+
+  .\32xl\:mx-\[700px\] {
+    margin-left: 700px;
+    margin-right: 700px;
+  }
+
   .\32xl\:mt-14 {
     margin-top: 3.5rem;
   }
