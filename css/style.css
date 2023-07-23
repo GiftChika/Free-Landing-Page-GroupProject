@@ -12,6 +12,7 @@ h3 {
 
 #Consultation {
     background-color: #FD665E;
+    width: max-content;
 }
 
 
@@ -43,8 +44,8 @@ h3 {
 
 
 .opening-box {
-  background: #ffffff;
   padding: 10px 100px;
+  margin: 80px 0;
 }
 
 .sounds-too-good {
@@ -54,7 +55,6 @@ h3 {
   line-height: 60px;
   display: flex;
   margin-bottom: 40px;
-  color: #000000;
   letter-spacing: -0.02em;
   width: 35%;
 }
@@ -76,7 +76,6 @@ h3 {
   font-size: 36px;
   font-weight: 400;
   line-height: 58px;
-  color: #000000;
   letter-spacing: 0.01em;
   text-align: left;
   margin-bottom: 20px;
@@ -166,7 +165,6 @@ h3 {
 
 @media screen and (max-width: 900px) {
   .opening-box {
-    background: #ffffff;
     padding: 10px 50px;
   }
 
@@ -175,7 +173,6 @@ h3 {
     font-size: 36px;
     font-weight: 400;
     line-height: 58px;
-    color: #000000;
     letter-spacing: 0.01em;
     text-align: left;
     margin-bottom: 20px;
@@ -184,7 +181,6 @@ h3 {
 
 @media screen and (max-width: 850px) {
   .opening-box {
-    background: #ffffff;
     padding: 10px 20px;
   }
 
@@ -208,7 +204,6 @@ h3 {
 
 @media screen and (max-width: 550px) {
   .opening-box {
-    background: #ffffff;
     padding: 10px 20px;
   }
 
@@ -232,7 +227,6 @@ h3 {
 
 @media screen and (max-width: 480px) {
   .opening-box {
-    background: #ffffff;
     padding: 10px 20px;
   }
 
@@ -256,8 +250,8 @@ h3 {
 
 @media screen and (max-width: 390px) {
   .opening-box {
-    background: #ffffff;
     padding: 10px 20px;
+    margin: 80px 0 0 0;
   }
 
   .rest-details {
@@ -282,7 +276,6 @@ h3 {
     font-size: 30px;
     font-weight: 400;
     line-height: 58px;
-    color: #000000;
     letter-spacing: 0.01em;
     margin-bottom: 20px;
   }
@@ -330,7 +323,6 @@ h3 {
  }
  .nav-bar .leftside-nav ul li a{
      text-decoration: none;
-     color: black;
      font-size: 14px;
      font-weight: 500;
  }
@@ -362,7 +354,6 @@ h3 {
 }
 .nav-bar .rightside-nav a{
     text-decoration: none;
-    color: black;
 }
 .nav-bar .rightside-nav a:hover{
     color:coral;
@@ -626,9 +617,7 @@ h3 {
 
 }
 /*.parent {
-  height:100px;
-  width: 550px;
-  background-color:beige;
+  gap:25px
   display: flex;
   flex-direction: row;
   
@@ -644,11 +633,7 @@ h3 {
   display: flex;
   flex-direction: row;
   
-
-  
-
 }
-
 .text1 {
   font-family: Playfair Display;
   font-size: 48px;
@@ -656,15 +641,10 @@ h3 {
   line-height: 59.52px;
   letter-spacing: -0.02em;
   text-align: left;
-  color: #000000;
   width: 535px;
   height: 120px;
   /*flex-wrap: wrap;
-  display:flex;*/
-  
-
-
-    
+  display:flex;*/  
 }
 .buttons {
   width: Hug (104px);
@@ -748,17 +728,22 @@ h3 {
   gap: 40px;
   display: flex;
   flex-direction: column;
-
-
+}
+.child2{
+  margin-top: 75px;
 }
 .child1 {
   width: Fill (342px);
   height: Hug (180px);
   gap: 32px;
 
-
-
 }
+.parent {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}*/
 
 .text1 {
   font-family: Playfair Display;
@@ -781,6 +766,66 @@ h3 {
 
 }
 
+}
+  
+#footer{
+  font-family: 'Inter';
+  display: grid;
+  grid-template-columns: 3fr 0.7fr;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 2px solid #E0E0E0;
+}
+
+#mode{
+  animation: mode 8s 2s infinite;
+}
+.section-6{
+  animation: six 5s 2s infinite;
+}
+
+@keyframes six{
+  0%{background-color: white; padding: 0;}
+  75%{background-color: black; color: white; padding: 20px 50px;}
+  95%{background-color: black; padding: 20px 10px;}
+  100%{background-color: white; padding: 0;}
+}
+
+@keyframes mode {
+  0%{background-color: #FD665E; border-radius: 12px;}
+  50%{background-color: white; border-radius: 12px;}
+  75%{background-color: black; color: white;  border-radius: 12px;}
+  100%{background-color: white;  border-radius: 12px;}
+}
+
+.about:hover{
+  transform: scaleY(108%);
+  transition: ease-in 1s;
+  color: #E0E0E0;
+  background-color: #fd665E;
+  border-radius: 3px;
+  padding: 10px 0;
+  margin: 10px 0 30px 0;
+}
+@media only screen and (max-width:768px){
+   #footer{
+       display: flex;
+       flex-direction: column-reverse;
+       gap: 40px;
+   }
+}
+@media only screen and (max-width:390px){
+   #footer{
+       display: flex;
+       flex-direction: column-reverse;
+       gap: 40px;
+   }
+   @keyframes six{
+    0%{background-color: white; margin-top: 480px;}
+    75%{background-color: black; color: white; padding: 20px 50px;  margin-top: 480px;}
+    95%{background-color: black; padding: 20px 10px; margin-top: 480px;}
+    100%{background-color: white; padding: 0; margin-top: 480px;}
+  }
 }
 
 
