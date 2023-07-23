@@ -338,6 +338,7 @@ h3 {
  .nav-bar .leftside-nav ul li a:hover{
     color: coral;
     transition: ease-in-out 0.15s;
+  
 }
  
 .nav-bar .rightside-nav{
@@ -379,12 +380,16 @@ h3 {
     .nav-bar .rightside-nav button:hover{
         background-color: coral;
     transition: ease-in-out 0.15s;
+    transform: translate(3px);
 }
     
     @media(min-width: 450px){
-        .vector{
+        .mobile-icon{
             display: none;
         }
+       .hamburger {
+        display: none;
+       }
     }
 /* section1 */
 .hero-section{
@@ -443,6 +448,7 @@ h3 {
 .hero-section .hero-btn:hover{
     background-color: coral;
     transition: ease-in-out 0.15s;
+    transform: translate(3px);
 }
 
 
@@ -456,6 +462,7 @@ h3 {
      justify-content: space-between;
      height: 40px;
      align-items: center;
+    
  }
  .nav-bar .leftside-nav ul{
      display: none;
@@ -475,6 +482,7 @@ h3 {
 /* hero-section */
 .hero-section{
     padding: 48px 0px;
+    position:relative;
     
 }
     
@@ -512,9 +520,74 @@ h3 {
     color: white;
     margin-bottom: 20px;
 }
-.vector{
+.mobile-icon{
+   position: absolute;
+   display: flex;
+   background-color:coral;
+   align-items: center;
+   justify-content: center;
+   margin-top: 40px;
+   padding: 50px 0px;
+   gap: 30px;
+   width:100%;
+   flex-direction: column;
     padding-top:8px;
+    top: 0px;
+    left: 0px;
+    visibility:collapse;
 }
+.mobile-icon a{
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  margin-top: 20px;
+}
+.remove-menu{
+  visibility: visible;
+}
+
+
+.hamburger{
+  cursor:pointer;
+  width:24px;
+  height:24px;
+  transition:all 0.25s;
+  position:relative;
+  
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position:absolute;
+    top:0;
+    left:0;
+    width:24px;
+    height:2px;
+    background: black;
+    transform:rotate(0);
+    transition:all 0.5s;
+}
+.hamburger-middle{
+  transform:translateY(7px);
+}
+.hamburger-bottom{
+  transform:translateY(14px);
+}
+  .open{
+  transform:rotate(90deg);
+  transform:translateY(0px);
+
+}  
+  .open .hamburger-top{
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+ .open .hamburger-middle{
+  display:none;
+}
+ .open .hamburger-bottom{
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}   
+
 }
 @media(max-width:987px) {
     .nav-bar .leftside-nav ul{
