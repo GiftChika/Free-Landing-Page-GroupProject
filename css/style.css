@@ -650,6 +650,9 @@ h3 {
   display: flex;
   flex-direction: column;
 }
+.child2{
+  margin-top: 75px;
+}
 .child1 {
   width: Fill (342px);
   height: Hug (180px);
