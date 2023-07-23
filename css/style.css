@@ -335,10 +335,14 @@ h3 {
      font-weight: 500;
  }
 
+
  .nav-bar .leftside-nav ul li a:hover{
     color: coral;
     transition: ease-in-out 0.15s;
   
+    transition:all ease-in-out 0.15s;
+    margin-bottom: 20px;
+    text-decoration:solid;
 }
  
 .nav-bar .rightside-nav{
@@ -377,6 +381,7 @@ h3 {
     font-weight: 600;
     color: white;
     }
+
     .nav-bar .rightside-nav button:hover{
         background-color: coral;
     transition: ease-in-out 0.15s;
@@ -449,6 +454,7 @@ h3 {
     background-color: coral;
     transition: ease-in-out 0.15s;
     transform: translate(3px);
+    
 }
 
 
