@@ -538,9 +538,7 @@ h3 {
 
 }
 /*.parent {
-  height:100px;
-  width: 550px;
-  background-color:beige;
+  gap:25px
   display: flex;
   flex-direction: row;
   
@@ -556,11 +554,7 @@ h3 {
   display: flex;
   flex-direction: row;
   
-
-  
-
 }
-
 .text1 {
   font-family: Playfair Display;
   font-size: 48px;
@@ -571,11 +565,7 @@ h3 {
   width: 535px;
   height: 120px;
   /*flex-wrap: wrap;
-  display:flex;*/
-  
-
-
-    
+  display:flex;*/  
 }
 .buttons {
   width: Hug (104px);
@@ -659,17 +649,19 @@ h3 {
   gap: 40px;
   display: flex;
   flex-direction: column;
-
-
 }
 .child1 {
   width: Fill (342px);
   height: Hug (180px);
   gap: 32px;
 
-
-
 }
+.parent {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}*/
 
 .text1 {
   font-family: Playfair Display;
