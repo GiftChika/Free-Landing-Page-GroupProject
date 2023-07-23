@@ -42,6 +42,7 @@ h3 {
   box-sizing: border-box;
 }
 
+
 .opening-box {
   padding: 10px 100px;
   margin: 80px 0;
@@ -99,6 +100,68 @@ h3 {
   display: flex;
   gap: 10px;
 }
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+  width: 100%;
+}
+.parent{
+  display: flex;
+  width: 100%;
+}
+.text1{
+  font-weight: bold;
+}
+.child1{
+  width: 60%;
+}
+.buttons{
+  width: 100%;
+}
+.buttons{
+  margin-left: 240px;
+}
+
+.child2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  overflow: scroll;
+  flex: none;
+}
+.child2, .image1, .image2, .image3, .image4{
+  width: 100%;
+  filter: grayscale(0%);
+  transition: transform 1s;
+}
+.child2::-webkit-scrollbar{
+  display: none;
+}
+
+#leftBtn, #rightBtn{
+  width: 50px;
+  cursor: pointer;
+}
+.child2 img:hover{
+  filter: grayscale(0%);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
   .opening-box {
@@ -644,5 +707,82 @@ h3 {
        flex-direction: column-reverse;
        gap: 40px;
    }
+}
+
+
+
+.big-text2 {
+    animation: slide-in-right 2s ease-in 1s forwards normal;
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: .5;
+    }
+
+    50% {
+        transform: translateX(50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.img2 {
+    animation: in-out 2s ease-in 1s forwards normal;
+}
+
+@keyframes in-out {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+#Consultation {
+    animation: btn 2s ease-in-out 1s forwards normal;
+}
+
+
+@keyframes btn {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+.section-3-text, .opening-box{
+    animation: drop-down 2s ease-in 1s forwards normal;
+    transform-origin: left;
+}
+
+@keyframes drop-down {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0; 
+      }
+      
+      100% {
+        transform: translateY(0);
+        opacity: 1; 
+      }
 }
 
