@@ -691,7 +691,46 @@ h3 {
   display: grid;
   grid-template-columns: 3fr 0.7fr;
   padding-top: 50px;
+  padding-bottom: 50px;
   border-top: 2px solid #E0E0E0;
+}
+
+#mode{
+  animation: mode 8s 2s infinite;
+}
+.section-6{
+  animation: six 5s 2s infinite;
+}
+
+@keyframes six{
+  0%{background-color: white; padding: 0;}
+  75%{background-color: black; color: white; padding: 20px 50px;}
+  95%{background-color: black; padding: 20px 10px;}
+  100%{background-color: white; padding: 0;}
+}
+
+@keyframes mode {
+  0%{background-color: #FD665E;}
+  50%{background-color: white;}
+  75%{background-color: black; color: white;}
+  100%{background-color: white;}
+}
+
+.about:hover{
+  transform: scaleY(108%);
+  transition: ease-in 1s;
+  color: #E0E0E0;
+  background-color: #fd665E;
+  border-radius: 3px;
+  padding: 10px 0;
+  margin: 10px 0 30px 0;
+}
+@media only screen and (max-width:768px){
+   #footer{
+       display: flex;
+       flex-direction: column-reverse;
+       gap: 40px;
+   }
 }
 @media only screen and (max-width:390px){
    #footer{
