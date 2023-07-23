@@ -38,8 +38,8 @@
       <p class="text"><a href="#">Sign in</a></p> 
 <a href="#"> 
     <button class="btn"><span>Sign up</span></button></a>
-    <div class="bg-[#FD665E] flex">
-      <input type="button" onclick="tgl()" id="btn" value="Dark mode">
+    <div class="bg-[#FD665E] flex cursor-pointer" onclick="tgl()" id="mode" >
+      <input type="button"id="btn" value="Dark mode">
       <img src="./img/dark_mode.svg" alt="">
     </div>
     <a href="#"><img class="vector" src="img/Vector.png" alt=""></a>
@@ -126,7 +126,7 @@
         </div>
     </div>
 
-    <div id="Consultation" class="text-white text-center p-3 rounded-[5px] mt-5 lg:mx-[400px] lg:mt-20 xl:mx-[500px] 2xl:mx-[700px] 2xl:text-[30px] 2xl:py-[30px] 2xl:mt-[150px] xl:mb-20">Free Consultation</div>
+    <div id="Consultation" class="text-white cursor-pointer text-center p-3 rounded-[5px] mt-5 lg:mx-[400px] lg:mt-20 xl:mx-[500px] 2xl:mx-[700px] 2xl:text-[30px] 2xl:py-[30px] 2xl:mt-[150px] xl:mb-20">Free Consultation</div>
     
   <!-- -----------------section 4------------------ -->
   <div class="opening-box">
@@ -157,7 +157,7 @@
           <div class="position-and-direction-button">
             <div class="position-div">Adam Morph — CEO Alfatech</div>
             <div class="direction-buttons">
-              <div>
+              <div class="cursor-pointer">
                 <svg
                   width="48"
                   height="48"
@@ -178,7 +178,7 @@
                   />
                 </svg>
               </div>
-              <div>
+              <div class="cursor-pointer">
                 <svg
                   width="48"
                   height="48"
@@ -214,49 +214,50 @@
     </div>
     <div class=" right_side pt-[40px]  md:pt-[220px] flex flex-col items-center text-center">
         <div class=" font-bold text-[42px] md:text-[64px]  font-['Playfair'] leading-[64px]">Realize Your <br>dream project <br>with <span class="text-[#FD665E]">Archmove</span></div>
-        <div><button class=" bg-[#FD665E] py-4 font-bold px-7 text-white mt-7">FREE CONSULTATION</button></div>
+        <div><button class=" bg-[#FD665E] py-4 font-bold px-7 text-white mt-7 cursor-pointer">FREE CONSULTATION</button></div>
     </div>
 </div>
 
 <!-- Section 6 -->
-<div style="font-family: 'Playfair Display', serif; " class=" max-[390px]:mt-[380px]">
-    <div class="my-[60px] text-4xl font-black max-[390px]:text-center max-[390px]:my-[30px]">Our Partners</div>
-    <div class="flex mb-[-120px] max-[390px]:mb-[0] justify-between max-[390px]:collapse">
-        <img src="./img/u-turn.svg" alt="">
-        <img src="./img/nextmove.svg" alt="">
-        <img src="./img/pinpoint.svg" alt="">
-        <img src="./img/leafe.svg" alt="">
-        <img src="./img/terra.svg" alt="">
-        <img src="./img/dune.svg" alt="">
+<div class="section-6" id="section-6">
+<div style="font-family: 'Playfair Display', serif; " class=" max-[390px]:mt-[380px]  max-[768px]:mt-[520px]">
+    <div class="my-[60px] text-4xl font-black max-[768px]:text-center max-[768px]:mb-[120px] max-[390px]:my-[30px]">Our Partners</div>
+    <div class="flex mb-[-120px] max-[390px]:mb-[0] justify-between max-[768px]:collapse">
+        <img class="cursor-pointer" src="./img/u-turn.svg" alt="">
+        <img class="cursor-pointer" src="./img/nextmove.svg" alt="">
+        <img class="cursor-pointer" src="./img/pinpoint.svg" alt="">
+        <img class="cursor-pointer" src="./img/leafe.svg" alt="">
+        <img class="cursor-pointer" src="./img/terra.svg" alt="">
+        <img class="cursor-pointer" src="./img/dune.svg" alt="">
     </div>
-    <div class="collapse gap-5 max-[390px]:visible max-[390px]:flex max-[390px]:gap-7 max-[390px]:self-center
-    max-[390px]:flex-col">
+    <div class="collapse gap-5 max-[768px]:visible max-[768px]:flex max-[768px]:gap-7 max-[768px]:self-center
+    max-[768px]:flex-col">
         <div class="flex justify-around">
-            <img src="./img/u-turn.svg" alt="">
-            <img src="./img/nextmove.svg" alt="">
+            <img class="cursor-pointer" src="./img/u-turn.svg" alt="">
+            <img class="cursor-pointer" src="./img/nextmove.svg" alt="">
         </div>
         <div class="flex justify-around">
-            <img src="./img/pinpoint.svg" alt="">
-            <img src="./img/leafe.svg" alt="">
+            <img class="cursor-pointer" src="./img/pinpoint.svg" alt="">
+            <img class="cursor-pointer" src="./img/leafe.svg" alt="">
         </div>
         <div class="flex justify-around">
-            <img src="./img/terra.svg" alt="">
-            <img src="./img/dune.svg" alt="">
+            <img class="cursor-pointer" src="./img/terra.svg" alt="">
+            <img class="cursor-pointer" src="./img/dune.svg" alt="">
         </div>
     </div>
 </div>
 
 <div class=" mt-[80px]" id="footer">
-    <div class="text-sm flex gap-[70px] max-[390px]:flex-col max-[390px]:self-center max-[390px]:gap-[32px] max-[390px]:mt-[30px]">
-        <a href="#" class="text-center">About Us</a>
-        <a href="#" class="">How It Works</a>
-        <a href="#" class="text-center">FAQ</a>
-        <a href="#" class="text-center">Contact Us</a>
-        <a href="#" class="text-center">Privacy Policy</a>
+    <div class="text-sm flex gap-[70px] max-[768px]:flex-col max-[390px]:flex-col max-[390px]:self-center max-[390px]:gap-[32px] max-[390px]:mt-[30px]">
+        <a href="#" class="text-center about">About Us</a>
+        <a href="#" class="text-center about">How It Works</a>
+        <a href="#" class="text-center about">FAQ</a>
+        <a href="#" class="text-center about">Contact Us</a>
+        <a href="#" class="text-center about">Privacy Policy</a>
     </div>
-    <img  class="max-[390px]:self-center" src="./img/archmove-footer.svg" alt="">
+    <img  class="max-[390px]:self-center max-[768px]:self-center" src="./img/archmove-footer.svg" alt="">
 </div>
-
+</div>
 <script src="/script.js"></script>
     
 </body>
