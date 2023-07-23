@@ -703,6 +703,81 @@ h3 {
 }
 
 }
-  
 
+
+
+.big-text2 {
+    animation: slide-in-right 2s ease-in 1s forwards normal;
+}
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: .5;
+    }
+
+    50% {
+        transform: translateX(50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+
+.img2 {
+    animation: in-out 2s ease-in 1s forwards normal;
+}
+
+@keyframes in-out {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+    
+}
+
+#Consultation {
+    animation: btn 2s ease-in-out 1s forwards normal;
+}
+
+
+@keyframes btn {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+.section-3-text, .opening-box{
+    animation: drop-down 2s ease-in 1s forwards normal;
+    transform-origin: left;
+}
+
+@keyframes drop-down {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0; 
+      }
+      
+      100% {
+        transform: translateY(0);
+        opacity: 1; 
+      }
+}
 
