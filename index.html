@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Landing Page</title>
     <link rel="stylesheet" href="/dist/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,13 +14,13 @@
 <!-- content padding -->
 <body class="content-padding"> 
  
- 
     <!-- nav-tag -->
     <section class="nav-bar">
         <!-- leftside-nav -->
         <div class="leftside-nav">
             <div class="left-img">
-    <img src="img/logo-arch.png" alt="">
+             
+    <img src="img/logo-arch.png" alt=""> 
           </div>
           <div class="ul-items">
         <ul class="nav-menu">
@@ -31,11 +32,16 @@
     </div>
     </div>
     <!-- rightside-nav -->
+    
     <div class="rightside-nav">
-        <img class="img" src="img/search-icon.png" alt=""> 
+        <img class="img" width="41" height="14" src="img/search-icon.png" alt=""> 
       <p class="text"><a href="#">Sign in</a></p> 
 <a href="#"> 
     <button class="btn"><span>Sign up</span></button></a>
+    <div class="bg-[#FD665E] flex">
+      <input type="button" onclick="tgl()" id="btn" value="Dark mode">
+      <img src="./img/dark_mode.svg" alt="">
+    </div>
     <a href="#"><img class="vector" src="img/Vector.png" alt=""></a>
     </div>
     
@@ -215,7 +221,7 @@
 <!-- Section 6 -->
 <div style="font-family: 'Playfair Display', serif;">
     <div class="my-[60px] text-4xl font-black max-[390px]:text-center max-[390px]:my-[30px]">Our Partners</div>
-    <div class="flex mb-[-120px] max-[390px]:mb-[0] justify-between max-[390px]:collapse" style="opacity: 30%;">
+    <div class="flex mb-[-120px] max-[390px]:mb-[0] justify-between max-[390px]:collapse">
         <img src="./img/u-turn.svg" alt="">
         <img src="./img/nextmove.svg" alt="">
         <img src="./img/pinpoint.svg" alt="">
@@ -224,7 +230,7 @@
         <img src="./img/dune.svg" alt="">
     </div>
     <div class="collapse gap-5 max-[390px]:visible max-[390px]:flex max-[390px]:gap-7 max-[390px]:self-center
-    max-[390px]:flex-col" style="opacity: 50%;">
+    max-[390px]:flex-col">
         <div class="flex justify-around">
             <img src="./img/u-turn.svg" alt="">
             <img src="./img/nextmove.svg" alt="">
