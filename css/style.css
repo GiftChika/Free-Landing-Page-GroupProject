@@ -41,6 +41,7 @@ h3 {
   box-sizing: border-box;
 }
 
+
 .opening-box {
   background: #ffffff;
   padding: 10px 100px;
@@ -100,6 +101,68 @@ h3 {
   display: flex;
   gap: 10px;
 }
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto;
+  width: 100%;
+}
+.parent{
+  display: flex;
+  width: 100%;
+}
+.text1{
+  font-weight: bold;
+}
+.child1{
+  width: 60%;
+}
+.buttons{
+  width: 100%;
+}
+.buttons{
+  margin-left: 240px;
+}
+
+.child2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  overflow: scroll;
+  flex: none;
+}
+.child2, .image1, .image2, .image3, .image4{
+  width: 100%;
+  filter: grayscale(0%);
+  transition: transform 1s;
+}
+.child2::-webkit-scrollbar{
+  display: none;
+}
+
+#leftBtn, #rightBtn{
+  width: 50px;
+  cursor: pointer;
+}
+.child2 img:hover{
+  filter: grayscale(0%);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
   .opening-box {
