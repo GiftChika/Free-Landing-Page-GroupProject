@@ -645,6 +645,14 @@ video {
   width: 100%;
 }
 
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[5000px\] {
+  width: 5000px;
+}
+
 @keyframes bounce {
   0%, 100% {
     transform: translateY(-25%);
@@ -706,6 +714,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
@@ -719,6 +731,26 @@ video {
 .py-\[60px\] {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-14 {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .pt-\[40px\] {
@@ -921,6 +953,21 @@ video {
   .xl\:mx-\[500px\] {
     margin-left: 500px;
     margin-right: 500px;
+  }
+
+  .xl\:mx-\[400px\] {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+
+  .xl\:mx-\[50px\] {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .xl\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .xl\:mb-20 {
